@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: #333333;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.head-logo {
+    font-size: 64px;
+    font-family: 'Antonio', sans-serif;
+    font-style: white;
+
+} 
