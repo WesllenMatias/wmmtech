@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 * {
@@ -23,8 +23,18 @@ body {
 }
 
 .head-logo {
-    font-size: 64px;
-    font-family: 'Antonio', sans-serif;
-    font-style: white;
-
+    height: 64px;
 } 
+
+.head-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.head-menu-item {
+    color: #FFFFFF;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 20px;
+}
