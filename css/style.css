@@ -11,6 +11,8 @@
 body {
     font-size: 100%;
     background-color: #333333;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .head {
@@ -41,12 +43,35 @@ body {
 
 .main-middle {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
+.main-direita {
+    display:flex;
+    justify-content: center;
+}
+
+.main-baixo {
+    background-color: #FFFF00;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.main-esquerda {
+    background-color: #333333;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
 .main-img {
-    width: 50%;
+    width: 100%;
 }
 
 .line {
@@ -55,11 +80,53 @@ body {
     margin-bottom: 10px;
 }
 
+.h1-y {
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 64px;
+}
+
+.h1-b {
+    color: #333333;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    font-size: 64px;
+}
+
 .main-text {
     color: #FFFFFF;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 100;
-    font-size: 15px;
+    font-weight: 200;
+    font-size: 20px;
     font-style: normal;
     text-align: justify;
+    margin: 20px;
+    max-width: 600px;
+}
+
+.main-text-baixo {
+    color: #333333;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: normal;
+    text-align: justify;
+    margin: 20px;
+    max-width: 600px;
+}
+
+.rodape {
+
+}
+
+.rodape-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: center;
+    gap: 25px;
 }
