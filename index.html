@@ -12,9 +12,9 @@
         <img class="head-logo" src="img/logo-wmm.png" alt="">
         <nav class="head-menu">
             <a class="head-menu-item" href="#">Home</a>
-            <a class="head-menu-item" href="#">Empresa</a>
-            <a class="head-menu-item" href="#">Soluções</a>
-            <a class="head-menu-item" href="#">Contato</a>
+            <a class="head-menu-item" href="#empresa">Empresa</a>
+            <a class="head-menu-item" href="#solucoes">Soluções</a>
+            <a class="head-menu-item" href="#contato">Contato</a>
         </nav>
     </header>
     <hr class="line">
@@ -24,7 +24,7 @@
             
         </section>
         <section class="main-esquerda">
-            <h1 class="h1-y">EMPRESA</h1>
+            <h1 class="h1-y" id="empresa">EMPRESA</h1>
             <p class="main-text">A WMMTech tem a solução em tecnologia para sua necessidade, seja ela para sua empresa, sendo ela para Infraestrutura, Sistemas ou Suporte.
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -32,7 +32,7 @@
                   It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially </p>
         </section>
         <section class="main-baixo">
-            <h1 class="h1-b">SOLUÇÕES</h1>
+            <h1 class="h1-b" id="solucoes">SOLUÇÕES</h1>
             <section class="cards">
                 <section class="card">
                     <div class="icon">
@@ -62,15 +62,27 @@
                     <h3 class="card-title">WiFi-Corporativa</h3>
                     <span class="card-text">Sua empresa com um WiFi profissional que atendera sua necessidade de forma acertiva.</span>
                 </section>
-                <!--<section class="card"></section>
-                <section class="card"></section>-->
+                <section class="card">
+                    <div class="icon">
+                        <img src="data:image/png;base64,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">
+                    </div>
+                    <h3 class="card-title">Ominichannel</h3>
+                    <span class="card-text">Canal de atendimento ao cliente de multiplas origens, Whatsapp, Facebook, Instagram e chat.</span>
+                </section>
+                <section class="card">
+                    <div class="icon">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAACP0lEQVR4nO3aT04UQRTH8Q+omMBa/O9BDC4g8e9lXLjVxJXgCdybeAKvIIkudCFB0ehOPACICxJpF10tk5keYUhXVw9d36QyPdWd917/pt6b6uoik8lkMplMn5nDc/xE0ZO2jbVw79Y6EFCqtiqoUeCm/rAkjISZcAAz6eJJQgGzNSfWpR+aJ21vjriPwfPGCVDU9E0LxZjjsX05BVJHkZq2BLiGSy35mpiqQMTiSbB/gFe4EtHXJPy775gCnMEO/mAv+NnBI5yL5PO4tCLAfLD9G1fxcsDfF9yJ5Pc4tC5AxQo+Dfh9jRuR/P+PZAJQDv+H2A3n9/AU5yPFUUdSASrq0uJupFiG6YQAFSvY1G5adEoADtNiRztp0TkBKobT4ivuNR9adwWouI0th/G90OzMtfMCMJoWyw3FJdgrpu1hKMoP1dUR0NsU6G0R7PXf4LKeToR6OxXu9cNQinl/HXlBRF4Siy8APV8UrbiOi5F9TEqBIr8ZSh3FhKwbfcF53L6xFB1umzhbE2td/Ef11b717voIOGjQVm2dG1R3GmpA9SuepG9p6HtBfj0+dUWwcWaV2+MYHSKnmVvhc5tyq1jqap+qPaPcLLjqcLtcH9qPcPNzWqRy3tR1jZCLYOoAUpMFiGBzXrkGsIV9ozl9VIEavm4/2HocbHeaRXwQr3q/Dz46ySI2lIF+w30sNGB3AQ/wPdje0EERLuCjMsDP4myKHPZxOYKPE/NO+5OZt00E3lQR/NWQna77zGQyp4y/zeSjCxIRfLQAAAAASUVORK5CYII=">
+                    </div>
+                    <h3 class="card-title">TV Corporativa</h3>
+                    <span class="card-text">Um canal de Midia digital corporativa para seus colaboradores e clientes.</span>
+                </section>
             </section>
 
         </section>
     </main>
     <footer class="rodape">
         <section class="rodape-contato">
-            <h1 class="h1-y">CONTATO</h1>
+            <h1 class="h1-y" id="contato">CONTATO</h1>
             <form class="form-contato" action="https://formspree.io/f/xyyvyraw" method="POST">
                 <input type="email" name="email" placeholder="E-mail">
                 <input name="message" placeholder="Assunto">
