@@ -59,6 +59,8 @@ body {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .main-esquerda {
@@ -141,7 +143,8 @@ input {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 32px;
+    border: 0;
     width: 300px;
     height: 50px;
 }
@@ -150,8 +153,8 @@ textarea {
     font-family: 'Work Sans', sans-serif;
     font-size: 18px;
     text-align: center;
-    border-radius: 20px;
-    border: 0px;
+    border-radius: 32px;
+    border: 0;
     size: 50px;
     width: 300px;
     vertical-align: middle;
@@ -164,11 +167,51 @@ button {
     /*font-family: 'Bebas Neue', cursive;*/
     font-weight: bold;
     font-size: 18px;
-    border-radius: 20px;
+    border-radius: 32px;
     size: 50px;
     vertical-align: middle;
-    border: 0px;
+    border: 0;
     padding: 10px;
     text-align: center;
+    cursor: pointer;
 
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-color: #333333;
+    /*background: #cece1e;*/
+    max-height: 210px;
+}
+
+main.main-middle section.main-baixo section.cards section.card div.icon img {
+    width: 64px;
+    height: 64px;
+}
+
+.card-title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 20px 0px;
+}
+
+.card-text {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    max-width: 300px;
+    text-align: center;
+    line-height: 18px;
 }
