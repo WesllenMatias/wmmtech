@@ -24,21 +24,27 @@ body {
     margin-bottom: 10px;
 }
 
+
+.head-menu{
+    
+}
+
 .head-logo {
     height: 64px;
 } 
 
-.head-menu {
+/*.head-menu {
     display: flex;
     flex-direction: row;
     gap: 24px;
-}
+}*/
 
 .head-menu-item {
     color: #FFFFFF;
     font-family: 'Bebas Neue', cursive;
     font-weight: 500;
     font-size: 20px;
+    text-decoration: none;
 }
 
 .main-middle {
@@ -215,3 +221,21 @@ main.main-middle section.main-baixo section.cards section.card div.icon img {
     text-align: center;
     line-height: 18px;
 }
+
+.head-menu-li {
+    display: inline-block;
+    margin: 10px;
+    list-style: none;
+}
+
+.head-menu-ul {
+    display: flex;
+    align-items: center;
+}
+
+.head-menu ul li {
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
