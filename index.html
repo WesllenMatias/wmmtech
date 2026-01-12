@@ -1,132 +1,399 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>WMMTech Soluções em Tecnologia</title>
-    <!-- Matomo -->
-    <script>
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//b95e-186-211-99-204.ngrok-free.app/matomo/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '2']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- End Matomo Code -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>WMMTECH Soluções em Tecnologias</title>
+  <meta name="description" content="Implantação de sistemas, suporte, treinamento e soluções personalizadas. Sistemas de automação comercial: Link Pro e Navi Vendas — suporte 100% WMMTECH." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WMMTECH Soluções em Tecnologias" />
+  <meta property="og:description" content="Implantação, suporte, treinamento e soluções personalizadas. Sistemas de automação comercial: Link Pro e Navi Vendas — suporte 100% WMMTECH." />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Pequenos ajustes de marca -->
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-<body>
-    <header class="head">
-        <img class="head-logo" src="img/logo-wmm.png" alt="logomarca">
-        <nav class="head-menu">
-            <ul class="head-menu-ul">
-                <li class="head-menu-li"><a class="head-menu-item" href="#">Home</a></li>
-                <li class="head-menu-li"><a class="head-menu-item" href="#empresa">Empresa</a></li>
-                <li class="head-menu-li"><a class="head-menu-item" href="#solucoes">Soluções</a></li>
-                <li class="head-menu-li"><a class="head-menu-item" href="https://mail.zoho.com/zm">Webmail</a></li>
-                <li class="head-menu-li"><a class="head-menu-item" href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr class="line">
-    <main class="main-middle">
-        <section class="main-direita">
-            <img class="main-img" src="img/MacBook Air on the desk during the meeting_1.png" alt="">
-            
-        </section>
-        <section class="main-esquerda">
-            <h1 class="h1-y" id="empresa">EMPRESA</h1>
-            <p class="main-text">Fundada em 2022 a WMMTech tem como objetivo levar soluções em tecnologia para a necessidade da sua empresa, 
-                com foco no melhor equilibrio entre custo e beneficio, usando ferramentas Open Souce renomadas para atingir de forma assertiva a
-                melhor solução para a necessidade demanda enfrentada por nossos clientes, usando sempre as mais modernas praticas e ferramentas disponiveis atualmente no mercado.
+
+<body class="bg-slate-950 text-slate-100">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-slate-950/70 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#topo" class="flex items-center gap-3">
+        <!-- Se você tiver logo, coloque em /img/logo.png e descomente -->
+        <!-- <img src="img/logo.png" alt="WMMTECH" class="h-10 w-10 rounded-lg border border-slate-800" /> -->
+        <div>
+          <div class="font-extrabold tracking-tight text-lg">WMMTECH</div>
+          <div class="text-xs text-slate-400 -mt-1">Soluções em Tecnologias</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-slate-300">
+        <a class="hover:text-yellow-200 transition" href="#servicos">Serviços</a>
+        <a class="hover:text-yellow-200 transition" href="#parceria">Soluções</a>
+        <a class="hover:text-yellow-200 transition" href="#solucoes">Segmentos</a>
+        <a class="hover:text-yellow-200 transition" href="#contato">Contato</a>
+      </nav>
+
+      <a href="https://wa.me/5542988334518?text=Quero%20uma%20proposta%20Link%20Pro%20e%20Navi%20Vendas"
+         class="inline-flex items-center gap-2 rounded-lg bg-yellow-400 text-slate-950 px-4 py-2 text-sm font-extrabold hover:bg-yellow-300 transition">
+        Falar com a WMMTECH
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="topo" class="relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-yellow-400/15 via-transparent to-transparent"></div>
+
+    <div class="max-w-6xl mx-auto px-4 py-14 md:py-20 relative">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <!-- Ajustado: sem mencionar Cervantes no destaque -->
+          <p class="inline-flex items-center gap-2 text-xs font-semibold text-yellow-200 bg-yellow-400/10 border border-yellow-400/20 px-3 py-1 rounded-full">
+            Automação Comercial • Implantação + Treinamento + Suporte (WMMTECH)
+          </p>
+
+          <h1 class="mt-4 text-3xl md:text-5xl font-extrabold tracking-tight">
+            Implantação, suporte e evolução de sistemas para sua empresa vender mais.
+          </h1>
+
+          <p class="mt-4 text-slate-300 text-base md:text-lg leading-relaxed">
+            A WMMTECH entrega um processo completo: <strong class="text-white">implantação</strong>, <strong class="text-white">suporte</strong>,
+            <strong class="text-white">treinamento</strong> e <strong class="text-white">soluções personalizadas</strong>.
+            Também trabalhamos com sistemas de automação comercial como <strong class="text-white">Link Pro</strong> e <strong class="text-white">Navi Vendas</strong>,
+            com <strong class="text-white">atendimento 100% pela WMMTECH</strong>.
+          </p>
+
+          <div class="mt-7 flex flex-col sm:flex-row gap-3">
+            <a href="#parceria"
+               class="rounded-lg bg-yellow-400 px-5 py-3 font-extrabold text-slate-950 hover:bg-yellow-300 transition text-center">
+              Conhecer Link Pro & Navi Vendas
+            </a>
+
+            <a href="#servicos"
+               class="rounded-lg border border-slate-700 px-5 py-3 font-semibold text-slate-100 hover:bg-slate-900 transition text-center">
+              Ver serviços
+            </a>
+          </div>
+
+          <div class="mt-8 grid grid-cols-2 gap-3 text-sm text-slate-300">
+            <div class="rounded-xl border border-slate-800 bg-slate-900/30 p-4">
+              <div class="font-semibold text-white">Processo completo</div>
+              <div class="text-slate-400 mt-1">Da implantação ao pós-venda</div>
+            </div>
+            <div class="rounded-xl border border-slate-800 bg-slate-900/30 p-4">
+              <div class="font-semibold text-white">Foco em resultado</div>
+              <div class="text-slate-400 mt-1">Agilidade, controle e escala</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mantido: sua imagem/Logo -->
+        <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-4">
+          <div class="rounded-xl overflow-hidden border border-slate-800">
+            <img src="img/logo-wmm.png" alt="WMMTECH" class="w-full h-auto block" />
+          </div>
+          <p class="mt-3 text-xs text-slate-400">
+            Implantação • Suporte • Treinamento • Soluções Personalizadas
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="max-w-6xl mx-auto px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Serviços</h2>
+    <p class="mt-2 text-slate-400">
+      O que a WMMTECH entrega hoje para implantar, manter e evoluir tecnologia no seu negócio.
+    </p>
+
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="flex items-start gap-3">
+          <div class="text-2xl">🖥️</div>
+          <div>
+            <h3 class="text-lg font-semibold">Implantação de Sistemas</h3>
+            <p class="mt-2 text-slate-400">
+              Implantação completa, parametrização e ambiente pronto para operar com segurança.
             </p>
-        </section>
-        <section class="main-baixo">
-            <h1 class="h1-b" id="solucoes">SOLUÇÕES</h1>
-            <section class="cards">
-                <section class="card">
-                    <div class="icon">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADYElEQVR4nO2aO2sUURiGn10vERJRNEQtIlEwYiBbKEoglYqWoiSVdv4BbVRE0IBdvG4rNqaxsBCMCV5QEBQ1xIBGjagRGzEkRRRB1ph1Lc6MzB5nd3bn3HbJPPDB3M583/vOzJkzF0hISEhYwKQc5GwDMsB6oNFb9hP4ALwEvjqoyTgdwCXgE1CIiLfAGYRBdU8rMADkiRYuxxxwFVhjvWoNpIDjiFO7WuFyzAKH7JavRgNwDXXhcmSBtEUdsWgEHqFfvB8D1LAJaeA25sT70W9LULWcxLz4AvAH2G9JU8VsAnLYMaAATAErrSirkJvYE+/HOSvKKmAL4rS0bcAPYLVq8Tp61MO4GVI3AQcd5P2PSewffT8eW9BXllbciS8ghsvLVQSoXgIZxfaqLFGtQdWANsX2Otis0ljVgBWK7XWwSqWxqgFLFdvroDF6k9JUc/vKAPuAPYhTvwVYppJcIzlgGvgM3ANuAeO6dr4NGMZtbx8nhoCtKsJTwBHErca1mLjxG+gjxqWeQryOci1AV1yhytHq2RooWnf0VSq+i3gvMauN54jOtAN4ZyFfHtgRJT4FjFoSHxxDrAMmLOQdiTKgy0IRLwgfvLQAry3k317OgKzh5PKRl1kLvDFcw+VyBjw1mLjUkZdpAV4ZrONJueQzhpLKR74Z6AnM93jLgiaMG6plJihYHiAoPVuXYATYC3z35puBB0BnYJtOb5lvwjSwC43D2QBNwRnZgFnNyUqJD3uGz1BswgywG/0mfAvOyAZMaU7WS2XifcJM0P1dsOjzu2zAQ42JCsAib7oS8T6yCTmNNYGkUTZgSGOiFHAf8V/AKNW9usogOs4LiM9tOhmO2mAEs/dhP4Jj8z5LOUeRHorCHhNPRzlUx5xCGPGPMAPuEDFaqlMuAnflhaVeFBwDBo2WY5dB4ETYilIGzAMHEM8G9U4WoWU+bGW5V0V54ChiRDamvy5+BabnDOx/DNiJ0JBX3Vka6AbOI25PXxCOxu2NPyL+KfBp95bF3d+8V9Mzr8ZuavhXGp92xH+DkxSbYRWXLvUCG4CN3rQTXBoQ/KrU4KqImr9OTJMY4LoA1yQGuC7ANYkBrgtwjUsDCtGbmMelAROB6feuiljsKjFwA3EA0sB1h3UkJCQkLFz+AkDdrxyry5fiAAAAAElFTkSuQmCC">
-                    </div>
-                    <h3 class="card-title">Backup</h3>
-                    <span class="card-text">Soluções em backup em nuvem ou local para sua empresa visando sempre a contiuidade do seu negócio.</span class="card-text">
-                </section>
-                <section class="card">
-                    <div class="icon">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFXElEQVR4nO2bW2wUVRjHf1uVthYttEYq0mCqFvBaUagSX4QovvBCxDTEEB/VhOijwJtPamIQ4wVUEiUiQX3wmggaDYRLpaLxQgS8oaklFLyh0G51d334ZrvT6Zwz58w5s93E/pMv2czM9/8ucznf+c5ZmMT/G7kq25sOdAKzgKZAAM4E0g8cAf6olkNZJ6ALuA1YDCwELjbUGwQ+AT4GPgK+yMS7jNAOrAMOAyVP8g2wFnlyahYdwCZgBH+BR2UE2ALMrVJMRmgFngcKZBd4VArARqClCvFpsQo4SfUCj8ogcE/mUcagEbnrExV4VLZQGVEyx2zgUMYBpZGvkA9wppgH/DzBgepkALguq+CvBk7VQJBJchK5UV4xC/ipBoIzlX7kVfWCqdTmO58kXwLn+0jAyzUQTFrZ7Br8qhoIwlVWpg2+BSk0JjoAVzmFVKvWqEahMxRI1naetQ1+Lv5r+zywA7gfuJaxd6U1OPYAsDO41qftf4ErbRLwkkfjI8gssc3C/kXAo8CwRz9eNDXejr8p7UEsMx9BJ/C5J19GgEtNjK7zZPB1/IzDDcBWTz49bGLQRyfnNfy223LAGx78OpRk6HoPRg7iqQKLoAk/r8M1YdJzI0aWODr5D9ADnNVckwMWAUup1OvHkBFif+BkHM4E3F8z3m8bLA44YvEObtl9OsF4N9Cn0T+AdI91eM7Rx7d05CcciPPADA333ZgNa8PACg1PG26j1HEV8XQH0hLwvsbpbsPgw0lYoOHb6ehrc5moLkQ6R2PQBG8qjueAZ4B6C676QEc1kmgfYwN0ln+EE3CJI+lexfFFwI0p+BYANyvO7UnBF8bM8o9wAi5wJB1QHF/qwKnS/cWBE+DC8g9fCRgGflOcu8yBV6X7a2AzLUZjDSeg4EBYnjnGoU5x3AQq3RJQdOAdjTVs4HcHwiZgiuLcMQfeHxXH63GrNkdj9ZUAUI8iHzhw7rC0ZYpMEqAat3eTbn2/D9inOJdULSYhNtZpyHuVtrh4W2PwFuyqtyH0Q+e7Dn4WCRVCURx1IM6j7/r0GCYhDyzX8Mw05FHJEQ03rzoQl4AndOTIo/upRr+P5KJpvaOPW3XkDzmSD5G8LteINCmjuoMkN1Guwr2L/KDOQAdu34ESsrlJV/cv1OjqXqEG9FNpEyliUJj1OhopAdtQ3837NHp3KnTqgO0e/NofRxzFdoUTNuhBmqKNMefma/RuiDlWD7yC9BNcsc3kojb8rdb0Mn5Hl+4xjiZ/HtIl8uHLWcz3KfKUJ6MlJJnLAt7z0Cf3aMiHZQnX2sqTpsGDLCD4NL4p4E3qOheozNR8rk0OEeoBmGKDJ+MFKu/9vQbX3xpcOx9/65MbbIMHaRr42BYTXpMzebVWh67f7MF+P9LvTIUluNUFpxnbattjoBPe1TED+NPBfhH10GoMl3dxTYinDklIks5nEftrHOxvdA0eZCzfl8L4D0j1VsYcQ708YyvJhoDL1v5e4uuQVGhFZlE2DtwV4Vhpodsd0V1hafs7LMZ8U1yB+crRrhj9xy0CWB2jv8tQ9wRwuWOsSnSQvHxeAG6K0f3QMIASsvk5ii6Sh8XvCS16ZIUWpM2lciJuK0oOaWWbJuCwwrZuWOwlg8dehUYk0OgQeZr4Ke1szIMvBbzTYnjaGD+SFIEX8PjBs8EdjC2WVFtQlmOXgBJwu4IrPCwOUJlnTBiakQ/cetRrA49gn4C1Cq4pSEX5GJrmZq3hPewToFpt9gqXZSsbpNkq533PfxzOqYaRAF2YL8AeRzrMB7JzR1Dtv842I09DO/I/hKnB8b+Bv5CZ27fIBGgSk6gC/gMiXN0WToqo5AAAAABJRU5ErkJggg==">
-                    </div>
-                    <h3 class="card-title">VPN</h3>
-                    <span class="card-text">Soluções em VPN para sua empresa continuar trabalhando de forma segura e de onde estiver.</span>
-                </section>
-                <section class="card">
-                    <div class="icon">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAB6UlEQVRoge3Zv2pUQRSA8Z/GzkAIQSJJm0rxDfICakohb6CFeYA8gG+QJzCNhY1JEXD9U4g2gmARULBeVlMIiVUUE4u5F9eb2dy7ZnXmhvvBNDtnDudjZs7OsnR0dHR0dEyW69jCAY4zGwdFbdeaSOxnUHDd2K+T2SoCn2ChzjoBC/6scSTlccpRomTR710ZSbl1uXOizouJCpk4nUhudCK50YnkRieSG20V2VbzAmnLEwVunDaZi8g01vAcffzAHnq42SRBDiKr+Cz+O+QtZpokSS2yjiNxiXeYbZoopciq0RLvMTdOslQi0xiIS3zE1XETphJZE5f4gPmatTO4Vf0wlcgzcZGlmnWzQgPoVSdSifTFRW6fsmZOaADH+FKdTCVyKC6yMSL+itAAyrjDakAqkT1xkU+R2HnsVuL61aCvxcTiv6l3JD1xkVJmQzhmS0IDqMacuCOPi4lt/09mCjuR4sYZ9+HNGZOMO45wd0hi84z5BsL3kG8tljjCnSKfly2WWDfESgslBsM7McyDDCV28FR40n8XWmxPuNiXYxIlK3hhsnfmbyUeFvHZMSUU10TikUwlLjgHO0E4063eiZLYkyImcSlVgU2pax6bMt+JktfOgQQs46eWS5Qs45Xwr/Eu7gndbGL8Ag2RIEzi527EAAAAAElFTkSuQmCC">
-                    </div>
-                    <h3 class="card-title">Assistência Técnica</h3>
-                    <span class="card-text">Assistência aos computadores da sua empresa, trabalhando sempre de forma a evitar problemas.</span>
-                </section>
-                <section class="card">
-                    <div class="icon">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADqklEQVRoge3Zz2tdRRQH8I+PhFBqGrpQsYI/aptFo9ToIpaaVKzdKKKLKFR3bsSFLgqiCy32H3CjC38W14IKWt1VapRWFNyY2iq2tZGA1rbkJVXRxNbFzDXTl/uS+/LuSxTuFw5z58zcmfN9c+a8c96jQoUKFSpUqOCKkte7FvdjBAO4Hn1xnylM4CjG8CF+KXn/tnE3DmAOlwrKnEBmxyrYuwA342PFjW8mB7BxhW3/F49hegkDW5FpPLqiDPBCCYbnyUU8X6ahu/AGjuNCh4xuRS7gGF7HvUUI9OPT/4DhS8khbG5GYgTnO7j533gL27G2yKeaYC0GBbc7E9c7h+HGif0dJjGHB1s0vhnW4d2EzKZ0sNPu9HJJJDLUEjKfZMpdHSZxCXeUTISQMWRutrMLj+RMGsNf8XkYPfgMfwr+ug2/43Cc04sh7MX+uOZLyXo/NKx/FbYuYWgdXwl3981o9Ch+TsZfwb6Mw3ELP8HtyYJfRwLdsd8nxPvPkzmjkXgt0aV3rhEP5ezZKEfi3HcS3ZMN6wxG/bEaNuRsdGfyfDKSnY39On6K+gxDkehTwok9jvU56y4H+4XTGBdSmRTZSV/XJbhFI7Ylz6eEE0kxjhNJPyO+B0+jqwVDj+DtHP2Z2H6Z2HOmYc5MbHubbdhI5HzDeEqk2/xl3oEfcWN8rwi+E76xm+EZPJfY9UXepGZENgi1xITgQtn9uCkaOG7etbZiTUGj89Aj3w2nhS/RQqgtMpadyil8E58fjm16IunpLQe7hRNvlFtbWaQIkZM4LVR5o1F31Ly/DrWyYaew2KXMiGTR6gYh3PW4/PKnEW45+F5IAhtxrpVFuoQU+cqcsUHB9/+I/S1xfr95V7taqBLbwWE8scx318V2uobJJpO6cXvS3xLbWxJdEbeqt2ZbS8gSxsmakI40Q3qRMyIDia4IkdMtGNYqHojtGKHiapYm1IXodAK/Rd10optpmD8lRJypRLevTWPXCOF5vcvvdB9+jXvckykPLUKmHZkUEsSyUcP7cY+D6cBmIUqUSWICt3WARB/ei3uclRNshksgMyNEoT3yI+Fy0SsEnr3m3eks7mr2wiah4up0odWuHFQw7O/Ea/jWwgu9GjIjZBOvSi52GXhWKK7KNvgiXizT0CLYrdyfTOvyy+4VwUahamuXxAdCibDqGBH+IphV3PhZgUDTyNMKyv6j5xrcJ1SKA0KlmCV2dSFdGRd+R/tICKUVKlSoUOH/i38Al799ja4/l24AAAAASUVORK5CYII=">
-                    </div>
-                    <h3 class="card-title">WiFi-Corporativa</h3>
-                    <span class="card-text">Sua empresa com um WiFi profissional que atendera sua necessidade de forma acertiva.</span>
-                </section>
-                <section class="card">
-                    <div class="icon">
-                        <img src="data:image/png;base64,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">
-                    </div>
-                    <h3 class="card-title">Ominichannel</h3>
-                    <span class="card-text">Canal de atendimento ao cliente de multiplas origens, Whatsapp, Facebook, Instagram e chat.</span>
-                </section>
-                <section class="card">
-                    <div class="icon">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAACP0lEQVR4nO3aT04UQRTH8Q+omMBa/O9BDC4g8e9lXLjVxJXgCdybeAKvIIkudCFB0ehOPACICxJpF10tk5keYUhXVw9d36QyPdWd917/pt6b6uoik8lkMplMn5nDc/xE0ZO2jbVw79Y6EFCqtiqoUeCm/rAkjISZcAAz6eJJQgGzNSfWpR+aJ21vjriPwfPGCVDU9E0LxZjjsX05BVJHkZq2BLiGSy35mpiqQMTiSbB/gFe4EtHXJPy775gCnMEO/mAv+NnBI5yL5PO4tCLAfLD9G1fxcsDfF9yJ5Pc4tC5AxQo+Dfh9jRuR/P+PZAJQDv+H2A3n9/AU5yPFUUdSASrq0uJupFiG6YQAFSvY1G5adEoADtNiRztp0TkBKobT4ivuNR9adwWouI0th/G90OzMtfMCMJoWyw3FJdgrpu1hKMoP1dUR0NsU6G0R7PXf4LKeToR6OxXu9cNQinl/HXlBRF4Siy8APV8UrbiOi5F9TEqBIr8ZSh3FhKwbfcF53L6xFB1umzhbE2td/Ef11b717voIOGjQVm2dG1R3GmpA9SuepG9p6HtBfj0+dUWwcWaV2+MYHSKnmVvhc5tyq1jqap+qPaPcLLjqcLtcH9qPcPNzWqRy3tR1jZCLYOoAUpMFiGBzXrkGsIV9ozl9VIEavm4/2HocbHeaRXwQr3q/Dz46ySI2lIF+w30sNGB3AQ/wPdje0EERLuCjMsDP4myKHPZxOYKPE/NO+5OZt00E3lQR/NWQna77zGQyp4y/zeSjCxIRfLQAAAAASUVORK5CYII=">
-                    </div>
-                    <h3 class="card-title">TV Corporativa</h3>
-                    <span class="card-text">Um canal de Midia digital corporativa para seus colaboradores e clientes.</span>
-                </section>
-                <section class="card">
-                    <div class="icon">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAADaklEQVRoge3Zy4scVRgF8N9kEjtq1DyMZhFUTJREAqKICCqKrxhREBGNzh8giY+ELLN05WuhCD7BRRYqunKIShYiE0VE3LiZGSeDRBOR6BCUQTQz0XZxu7Ftb1Xfqq6p7kUOHGiqb537nVv3+V3OYLgwUqHWGtyCG3EVNuEinNv6/3ecwHeYxOeYwK8VxlAaDYzhEE6jWZCn8TEebWnVjrOxDz8mBJvK49iLlXWZ2IHZCg108wi2L6WBBl5aQgPdPCB8+UpxMb6u0USbXwkTRiW4TPjcdZtoc6YVQ19Yj+kBmmhzFhvKmlhpMN0pr5uVmqJfHYLgu/lyURM7hiDoLN6VaqKBb4cg4Cwekbho7ksUXMBTOAfLcCf+qsnMnl4mGtK3HY9F3h+vycgxPQb+WKLQRMb722sy0sQjeUYOJYo8nPH+iPrG10dZJtZI34pvzmmMPTUZWcT5sQDuLyCS1z9XCxNBHWbua1e6rCOAm3KC60a0JVpYh+UFtPrBze0fnUa2FBC4PuP5Cryp2iN0HrbGHs5I/6TvZQjXva2ZjgUxV0BgAZdEND6t2cgvMSOnCoq8G9HYij9qNPJnzEiZAB6I6OwetJGfSgidxKURrbrO9tGuNVlS7Buc16U1ghd6vHdU+XxYm1MxIwf7EPwQoxHNMcxHys/h8laZTcJsV6Zrj8eMPN2HkSbe8t91qY2NeNu/W/xF3BYptwHP4LcCdT4bM1Jki5LFA8KiGMMVeA4PZvzfWS61vntjAhcIs0C/Zj7B2h7B5uHCxHoW5GyVqjoYHRXvPim4J7GOg3kiqQerFP4t7Ls2FjTyQaL+zjyRFfi+QjNNobu+gut6GGjgtUTNH3BWDz2PV2ykk5PYj2uEpMUqIR26S7gAStV5spcJLeGlMlIFp0UOdrF5/9YUtwNCE08IG9yeeMfgWz2LL6Y6HlXsXFInv5QwwNu4YQgCjnFWuGzKRPcYWdK7u5KYwe3C1XYyvjD41u/uTuuLOi+SoKuDryt5sfPQEATfFNaJO4oG35lIuzuh/BwOC0nsUSE9GjvqlsExPI83JK4TeULdrXMC7wuL0Db/T7wtF7Li48qd8BaFXexOBabWGDoDOywcaiY6ONWqMAWrhC5xLa7GlUIeeLUwO87jZ2EqncJnrTrm+zFwBsOKfwCcnlPGSrNV7gAAAABJRU5ErkJggg==">
-                    </div>
-                    <h3 class="card-title">Disparos de Whatsapp</h3>
-                    <span class="card-text">Alcance seus Clientes com o Envio em Massa de Mensagens Whatsapp</span>
-                </section>
-            </section>
+            <ul class="mt-3 text-sm text-slate-300 space-y-2 list-disc list-inside">
+              <li>Configuração do sistema e cadastros iniciais</li>
+              <li>Parametrização por tipo de negócio</li>
+              <li>Go-live assistido e acompanhamento pós-implantação</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-        </section>
-    </main>
-    <footer class="rodape">
-        <section class="rodape-contato">
-            <h1 class="h1-y" id="contato">CONTATO</h1>
-            <form class="form-contato" action="https://formspree.io/f/xyyvyraw" method="POST">
-                <input type="email" name="email" placeholder="E-mail">
-                <input name="message" placeholder="Assunto">
-            <button type="submit">Solicitar Contato</button>
-          </form>
-        </section>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="flex items-start gap-3">
+          <div class="text-2xl">🛠️</div>
+          <div>
+            <h3 class="text-lg font-semibold">Suporte Técnico Especializado</h3>
+            <p class="mt-2 text-slate-400">
+              Atendimento rápido para dúvidas, ajustes e continuidade operacional.
+            </p>
+            <ul class="mt-3 text-sm text-slate-300 space-y-2 list-disc list-inside">
+              <li>Suporte remoto e orientação operacional</li>
+              <li>Correções, ajustes e boas práticas</li>
+              <li>Manutenção preventiva e corretiva</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    </footer>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="flex items-start gap-3">
+          <div class="text-2xl">🎓</div>
+          <div>
+            <h3 class="text-lg font-semibold">Treinamento de Equipes</h3>
+            <p class="mt-2 text-slate-400">
+              Treinamento por função (caixa, balcão, vendas e gestão) para reduzir erros e ganhar produtividade.
+            </p>
+            <ul class="mt-3 text-sm text-slate-300 space-y-2 list-disc list-inside">
+              <li>Treinamento prático por perfil de usuário</li>
+              <li>Material de apoio e rotina de operação</li>
+              <li>Reciclagem e treinamento para novos colaboradores</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="flex items-start gap-3">
+          <div class="text-2xl">⚙️</div>
+          <div>
+            <h3 class="text-lg font-semibold">Soluções Personalizadas</h3>
+            <p class="mt-2 text-slate-400">
+              Ajustes sob medida, integrações e melhorias conforme o fluxo do seu negócio.
+            </p>
+            <ul class="mt-3 text-sm text-slate-300 space-y-2 list-disc list-inside">
+              <li>Personalizações por segmento e operação</li>
+              <li>Integrações com ferramentas e serviços externos</li>
+              <li>Automação de processos internos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="flex items-start gap-3">
+          <div class="text-2xl">🌐</div>
+          <div>
+            <h3 class="text-lg font-semibold">Desenvolvimento de Sistemas Web</h3>
+            <p class="mt-2 text-slate-400">
+              Sites, painéis administrativos, dashboards e sistemas sob medida para sua empresa.
+            </p>
+            <ul class="mt-3 text-sm text-slate-300 space-y-2 list-disc list-inside">
+              <li>Sites institucionais e páginas de vendas</li>
+              <li>Sistemas web e portais administrativos</li>
+              <li>Dashboards e relatórios gerenciais</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="flex items-start gap-3">
+          <div class="text-2xl">☁️</div>
+          <div>
+            <h3 class="text-lg font-semibold">Infraestrutura e Tecnologia</h3>
+            <p class="mt-2 text-slate-400">
+              Organização de ambientes, hospedagem e suporte a servidores e operações em nuvem.
+            </p>
+            <ul class="mt-3 text-sm text-slate-300 space-y-2 list-disc list-inside">
+              <li>Servidores, domínios e e-mail corporativo</li>
+              <li>Ajustes de performance e segurança</li>
+              <li>Padronização e continuidade operacional</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Destaque de “novidade” -->
+    <div class="mt-8 rounded-2xl border border-yellow-400/25 bg-yellow-400/5 p-6">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <div class="text-sm font-extrabold text-yellow-200">Novo</div>
+          <div class="text-xl font-extrabold mt-1">Automação Comercial: Link Pro & Navi Vendas</div>
+          <p class="mt-2 text-slate-300">
+            Implantação, treinamento e suporte realizados diretamente pela WMMTECH.
+            Você fala com a gente — do início ao pós-venda.
+          </p>
+        </div>
+        <a href="#parceria"
+           class="rounded-lg bg-yellow-400 px-5 py-3 font-extrabold text-slate-950 hover:bg-yellow-300 transition text-center">
+          Ver soluções
+        </a>
+      </div>
+    </div>
+
+    <p class="mt-4 text-xs text-slate-500">
+      *Conforme solicitado, esta versão não inclui “Disparos de WhatsApp” nem “Omnichannel”.
+    </p>
+  </section>
+
+  <!-- Soluções (antes: Parceria) -->
+  <section id="parceria" class="border-y border-slate-800 bg-slate-900/20">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <!-- Ajustado: título e texto para não “terceirizar” suporte -->
+      <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Soluções de Automação Comercial</h2>
+      <p class="mt-2 text-slate-400">
+        Sistemas para gestão e vendas com implantação, treinamento e suporte 100% WMMTECH.
+      </p>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-800 bg-slate-950/40 p-6">
+          <h3 class="text-xl font-extrabold mb-12">Link Pro</h3>
+
+          <!-- Mantido: sua imagem externa -->
+          <div class="mb-12 rounded-xl overflow-hidden border border-slate-800">
+            <img src="https://cervantestecnologia.com.br/assets/images/img-telas.png" alt="Telas do sistema Link Pro" class="w-full h-auto block" />
+          </div>
+
+          <p class="mt-2 text-slate-400">
+            Sistema completo para gestão comercial (ERP + PDV), ideal para empresas que precisam de controle e confiabilidade.
+          </p>
+          <ul class="mt-4 text-sm text-slate-300 space-y-2 list-disc list-inside">
+            <li>Gestão e operação de vendas</li>
+            <li>Controle de estoque e relatórios</li>
+            <li>Implantação e treinamento com a WMMTECH</li>
+            <li>Suporte e acompanhamento contínuo</li>
+          </ul>
+        </div>
+
+        <div class="rounded-2xl border border-slate-800 bg-slate-950/40 p-6">
+          <h3 class="text-xl font-extrabold mb-12">Navi Vendas</h3>
+
+          <!-- Mantido: sua imagem externa -->
+          <div class="mb-12 rounded-xl overflow-hidden border border-slate-800">
+            <img src="https://cervantestecnologia.com.br/assets/images/img-wl-devices.png" alt="Dispositivos do Navi Vendas" class="w-full h-auto block" />
+          </div>
+
+          <p class="mt-2 text-slate-400">
+            PDV moderno, leve e prático para operação rápida, indicado para varejo e atendimentos do dia a dia.
+          </p>
+          <ul class="mt-4 text-sm text-slate-300 space-y-2 list-disc list-inside">
+            <li>Vendas rápidas e controle de caixa</li>
+            <li>Facilidade para equipes operacionais</li>
+            <li>Treinamento e implantação pela WMMTECH</li>
+            <li>Suporte e evolução conforme necessidade</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-2xl border border-slate-800 bg-slate-950/30 p-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <div class="font-extrabold">Quer uma demonstração ou proposta?</div>
+          <div class="text-slate-400 text-sm mt-1">A gente avalia seu cenário e indica a solução ideal.</div>
+        </div>
+        <a href="#contato" class="rounded-lg bg-yellow-400 text-slate-950 px-5 py-3 font-extrabold hover:bg-yellow-300 transition text-center">
+          Agendar conversa
+        </a>
+      </div>
+
+      <!-- Observação discreta (opcional e segura) -->
+      <p class="mt-4 text-xs text-slate-500">
+        *Atendimento e suporte ao cliente final realizados exclusivamente pela WMMTECH.
+      </p>
+    </div>
+  </section>
+
+  <!-- Segmentos -->
+  <section id="solucoes" class="max-w-6xl mx-auto px-4 py-14">
+    <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Soluções por tipo de negócio</h2>
+    <p class="mt-2 text-slate-400">Implantação e ajustes conforme sua operação.</p>
+
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="font-extrabold">Varejo</div>
+        <div class="text-slate-400 mt-1">Vendas, estoque e gestão com rotina organizada.</div>
+      </div>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="font-extrabold">Serviços</div>
+        <div class="text-slate-400 mt-1">Atendimento ágil + visão do negócio.</div>
+      </div>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="font-extrabold">Alimentação</div>
+        <div class="text-slate-400 mt-1">Operação rápida e organização do atendimento.</div>
+      </div>
+      <div class="rounded-2xl border border-slate-800 bg-slate-900/30 p-6 hover:bg-slate-900/40 transition">
+        <div class="font-extrabold">Pequenas e médias</div>
+        <div class="text-slate-400 mt-1">Crescimento com suporte e treinamento.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="max-w-6xl mx-auto px-4 pb-16">
+    <div class="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900/60 to-slate-950/60 p-8 md:p-12">
+      <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight">Contato</h2>
+      <p class="mt-2 text-slate-400">
+        Me diga seu segmento e o que você precisa. Eu retorno com a melhor proposta.
+      </p>
+
+      <div class="mt-6 grid md:grid-cols-3 gap-4">
+        <a class="rounded-xl border border-slate-800 bg-slate-950/30 p-5 hover:bg-slate-950/50 transition"
+           href="https://wa.me/5542988334518?text=Quero%20uma%20proposta%20Link%20Pro%20e%20Navi%20Vendas">
+          <div class="font-extrabold">WhatsApp</div>
+          <div class="text-slate-400 text-sm mt-1">Clique para abrir</div>
+        </a>
+
+        <a class="rounded-xl border border-slate-800 bg-slate-950/30 p-5 hover:bg-slate-950/50 transition"
+           href="mailto:contato@wmmtech.com.br">
+          <div class="font-extrabold">E-mail</div>
+          <div class="text-slate-400 text-sm mt-1">contato@wmmtech.com.br</div>
+        </a>
+
+        <a class="rounded-xl border border-slate-800 bg-slate-950/30 p-5 hover:bg-slate-950/50 transition"
+           href="#topo">
+          <div class="font-extrabold">Atendimento</div>
+          <div class="text-slate-400 text-sm mt-1">Suporte via chat no site</div>
+        </a>
+      </div>
+
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <a href="#parceria"
+           class="rounded-lg bg-yellow-400 text-slate-950 px-5 py-3 font-extrabold hover:bg-yellow-300 transition text-center">
+          Quero Link Pro / Navi Vendas
+        </a>
+        <a href="#servicos"
+           class="rounded-lg border border-slate-700 px-5 py-3 font-semibold text-slate-100 hover:bg-slate-900 transition text-center">
+          Ver serviços
+        </a>
+      </div>
+
+      <p class="mt-6 text-xs text-slate-500">
+        © <span id="year"></span> WMMTECH Soluções em Tecnologias. Todos os direitos reservados.
+      </p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/62f5832c37898912e9628508/1ga7ggpue';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/62f5832c37898912e9628508/1ga7ggpue';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
     })();
-    </script>
-    <!--End of Tawk.to Script-->
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 </html>
